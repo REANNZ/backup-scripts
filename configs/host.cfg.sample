@@ -1,0 +1,25 @@
+# Hostname with domain for DNS lookups and file names
+HOST=host.domain.com
+
+# Optional IP overide for the host, usefull in behind DHCP or no DNS
+#IP=192.168.1.1
+
+# SSH private keyfile to use, must be passwordless (default $BASE/configs/$HOST.key)
+KEY=/backups/configs/host.key
+
+# User to connect as (default root)
+USER=root
+
+# Optional options to pass into RSYNC like "--one-file-system" or "--bwlimit=X"
+RSYNC_OPTIONS=
+
+# Optional options to pass into ssh like "-o StrictHostKeyChecking=false"
+SSH_OPTIONS=
+
+# Backup enabled (default no)
+ENABLED=yes
+
+# Set the nubmer of backups to keep at each level, the path and the excludes
+#d	w	m       path            excludes
+3       6       2       /
+
